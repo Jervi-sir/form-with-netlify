@@ -344,3 +344,122 @@ h1 {
     background: var(--color-selected);
     transition: 0.3s;
 }
+
+
+
+/*------ data -------*/
+
+[data-state]:before {
+    content: attr(data-state);
+    visibility: visible;
+}
+
+[data-state-excited]:before {
+    content: attr(data-state-excited);
+    visibility: visible;
+}
+
+
+[data-state-neutral]:before {
+    content: attr(data-state-neutral);
+    visibility: visible;
+}
+
+
+[data-state-bored]:before {
+    content: attr(data-state-bored);
+    visibility: visible;
+}
+
+
+[data-are-you]:before {
+    content: attr(data-are-you);
+    visibility: visible;
+}
+
+
+[data-are-you-yes]:before {
+    content: attr(data-are-you-yes);
+    visibility: visible;
+}
+
+
+[data-are-you-no]:before {
+    content: attr(data-are-you-no);
+    visibility: visible;
+}
+
+
+[data-btn-next]:before {
+    content: attr(data-btn-next);
+    visibility: visible;
+}
+
+
+[data-name]:before {
+    content: attr(data-name);
+    visibility: visible;
+}
+
+
+[data-contact]:before {
+    content: attr(data-contact);
+    visibility: visible;
+}
+
+[data-field]:before {
+    content: attr(data-field);
+    visibility: visible;
+}
+
+[data-level]:before {
+    content: attr(data-level);
+    visibility: visible;
+}
+
+
+[data-formality]:before {
+    content: attr(data-formality);
+    visibility: visible;
+}
+
+
+[data-other]:before {
+    content: attr(data-other);
+    visibility: visible;
+}
+
+
+[data-btn-previous]:before {
+    content: attr(data-btn-previous);
+    visibility: visible;
+}
+
+[data-male]:before {
+    content: attr(data-male);
+    visibility: visible;
+}
+
+[data-female]:before {
+    content: attr(data-female);
+    visibility: visible;
+}
+
+[data-share-with]:before {
+    content: attr(data-share-with);
+    visibility: visible;
+}
+
+[data-clarifying]:before {
+    content: attr(data-clarifying);
+    visibility: visible;
+}
+
+
+#first-message,
+#second-message {
+    visibility: hidden;
+    color: rgb(211, 9, 9);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
