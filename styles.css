@@ -285,7 +285,7 @@ h1 {
     color: #000000;
 }
 
-.second-page .right textarea {
+.second-page .right .second-textarea {
     border: var(--border);
     box-sizing: border-box;
     border-radius: 6px;
@@ -329,6 +329,26 @@ h1 {
 }
 
 
+/*---- Third --------*/
+.but-third h3 {
+    text-align: center;
+}
+
+.but-third .row  label {
+    font-size: var(--fs-exsmall);
+}
+
+.but-third  .third-textarea {
+    border: var(--border);
+    box-sizing: border-box;
+    background: transparent;
+    resize: vertical;
+    border: 1px solid rgb(189, 189, 189);
+    background: var(--color-secondary);
+    padding: 15px var(--snd-padding);
+}
+
+
 /*---- active -----*/
 
 .bubble.active {
@@ -344,6 +364,7 @@ h1 {
     background: var(--color-selected);
     transition: 0.3s;
 }
+
 
 
 
@@ -453,6 +474,45 @@ h1 {
 [data-clarifying]:before {
     content: attr(data-clarifying);
     visibility: visible;
+}
+
+[data-affiliation]:before {
+    content: attr(data-affiliation);
+    visibility: visible;
+}
+
+[data-cultural]:before {
+    content: attr(data-cultural);
+    visibility: visible;
+}
+
+
+[data-motivation]:before {
+    content: attr(data-motivation);
+    visibility: visible;
+}
+
+[data-conflict]:before {
+    content: attr(data-conflict);
+    visibility: visible;
+}
+
+[data-skills]:before {
+    content: attr(data-skills);
+    visibility: visible;
+}
+
+[data-feel-free]:before {
+    content: attr(data-feel-free);
+    visibility: visible;
+}
+
+[data-error-message]:before {
+    content: attr(data-error-message);
+}
+
+[data-btn-submit]:before {
+    content: attr(data-btn-submit);
 }
 
 

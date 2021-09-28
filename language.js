@@ -59,6 +59,18 @@ function english() {
     $('[data-share-with]').attr('data-share-with', 'Feel free to share with us');
     $('[data-clarifying]').attr('data-clarifying', 'Your social media, so we can know more about you');
 
+
+    $('[data-feel-free]').attr('data-affiliation', 'Feel free to answer the following');
+    $('[data-affiliation]').attr('data-affiliation', 'Any Affiliation to scientific clubs or external organization or internal to university? if yes, mention it ?');
+    $('[data-cultural]').attr('data-cultural', 'Have you ever participated in or organized cultural activities?');
+    $('[data-motivation]').attr('data-motivation', 'What is your motivation when joining Atlas?');
+    $('[data-conflict]').attr('data-conflict', 'How do you deal with conflict?');
+    $('[data-skills]').attr('data-skills', 'What can you offer the club? (your interests / skills / personality).');
+    $('[data-btn-submit]').attr('data-btn-submit', 'submit');
+    $('[data-error-message]').attr('data-error-message', 'Please answer to the questions');
+
+
+    
     $('#default-option').text('Misters / Miss');
     $('option[value=male]').text('Mister');
     $('option[value=female]').text('Miss');
@@ -72,6 +84,7 @@ function english() {
     $('input[name="instagram"]').attr("placeholder", "@username");
     $('input[name="linkedin"]').attr("placeholder", "@username");
 
+    $('input[name="cultural"]').attr("placeholder", "yes / no");
 }
 
 function french() {
@@ -96,6 +109,17 @@ function french() {
     $('[data-share-with]').attr('data-share-with', 'N\'hésitez pas à partager avec nous');
     $('[data-clarifying]').attr('data-clarifying', 'Vos réseaux sociaux, pour que nous en sachions plus sur vous');
 
+
+    $('[data-feel-free]').attr('data-affiliation', 'Vous êtes libre de répondre à ce qui suit');
+    $('[data-affiliation]').attr('data-affiliation', 'Toute affiliation à des clubs scientifiques ou à une organisation externe ou interne à l\'université ? si oui, le mentionner ?');
+    $('[data-cultural]').attr('data-cultural', 'Avez-vous déjà participé ou organisé des activités culturelles?');
+    $('[data-motivation]').attr('data-motivation', 'Quelle est votre motivation en rejoignant Atlas ?');
+    $('[data-conflict]').attr('data-conflict', 'Comment gérez-vous les conflits ?');
+    $('[data-skills]').attr('data-skills', 'Que pouvez-vous offrir au club ? (vos intérêts / compétences / personnalité).');
+    $('[data-btn-submit]').attr('data-btn-submit', 'envoyer');
+
+    $('[data-error-message]').attr('data-error-message', 'Veuillez répondre aux questions');
+    
     $('#default-option').text('Me / Mme');
     $('option[value=male]').text('Monsieur');
     $('option[value=female]').text('Madame (Mademoiselle)');
@@ -108,6 +132,7 @@ function french() {
     $('input[name="facebook"]').attr("placeholder", "lien");
     $('input[name="instagram"]').attr("placeholder", "@username");
     $('input[name="linkedin"]').attr("placeholder", "@username");
+    $('input[name="cultural"]').attr("placeholder", "oui / non");
 }
 
 function arabic() {
@@ -126,11 +151,22 @@ function arabic() {
     $('[data-level]').attr('data-level', 'المستوى الدراسي');
     $('[data-formality]').attr('data-formality', 'شكلي');
     $('[data-other]').attr('data-other', 'آخر:');
-    $('[data-btn-previous]').attr('data-btn-previous', 'سابق');
+    $('[data-btn-previous]').attr('data-btn-previous', 'الرجوع');
     $('[data-female]').attr('data-female', 'انسة');
     $('[data-male]').attr('data-male', 'سيد');
     $('[data-share-with]').attr('data-share-with', 'لا تتردد في مشاركتنا');
     $('[data-clarifying]').attr('data-clarifying', 'شبكات التواصل الاجتماعي الخاصة بك ، حتى نعرف المزيد عنك');
+    
+    $('[data-feel-free]').attr('data-affiliation', 'أنت حر في الرد على ما يلي');
+    $('[data-affiliation]').attr('data-affiliation', 'أي انتماء إلى نوادي علمية أو منظمة خارجية أو داخلية بالجامعة؟ إذا كان الأمر كذلك ، أذكرها؟');
+    $('[data-cultural]').attr('data-cultural', 'هل سبق لك أن شاركت أو نظمت أنشطة ثقافية؟');
+    $('[data-motivation]').attr('data-motivation', 'ما هو دافعك للانضمام إلى نظام أطلس؟');
+    $('[data-conflict]').attr('data-conflict', 'كيف تتعامل مع الصراعات؟');
+    $('[data-skills]').attr('data-skills', 'ماذا يمكنك ان تقدم للنادي؟ (اهتماماتك / مهاراتك / شخصيتك).');
+    $('[data-btn-submit]').attr('data-btn-submit', 'إرسال');
+
+    $('[data-error-message]').attr('data-error-message', 'الرجاء الرد على الأسئلة');
+
 
     $('#default-option').text('انسة / سيد');
     $('option[value=male]').text('انسة');
@@ -143,6 +179,8 @@ function arabic() {
     $('input[name="facebook"]').attr("placeholder", "رابط");
     $('input[name="instagram"]').attr("placeholder", "@username");
     $('input[name="linkedin"]').attr("placeholder", "@username");
+
+    $('input[name="cultural"]').attr("placeholder", "نعم / لا");
 }
 
 

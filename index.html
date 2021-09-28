@@ -74,8 +74,8 @@
                         <input id="person_excitement" type="text" name="person_excitement" hidden>
                     </div>
                 </div>
-                <div id="first-message">
-                    Please reply to the questions
+                <div id="first-message" data-error-message="Please answer to the questions">
+                    
                 </div>
                 <div class="action" dir="ltr">
                     <button id="toSecond" type="button" data-btn-next="Next"></button>
@@ -139,12 +139,12 @@
 
                         <div class="right">
                             <label for="other" data-other="Other: "></label>
-                            <textarea name="other_socials" rows="3" id=""></textarea>
+                            <textarea class="second-textarea" name="other_socials" rows="3" id=""></textarea>
                         </div>
                     </div>
                 </div>
-                <div id="second-message">
-                    Please reply to the questions
+                <div id="second-message" data-error-message="Please answer to the questions">
+                    
                 </div>
                 <div class="action" dir="ltr">
                     <button id="toFirst" type="button" data-btn-previous="Previous"></button>
@@ -152,6 +152,43 @@
                 </div>
             </div>
             <!-- ----------------------------- -->
+
+
+            <!-- third Page -->
+            <div id="thirdPage" class="second-page but-third" hidden>
+                <h3 datadata-feel-free="Feel free to answer the following"></h3>
+                <div class="row">
+                    <label for="name" data-affiliation="Any Affiliation to scientific clubs or external organization or internal to university? if yes, mention it ?"></label>
+                    <input type="text" name="affiliation" placeholder="............">
+                </div>
+
+                <div class="row">
+                    <label for="name" data-cultural="Have you ever participated in or organized cultural activities?"></label>
+                    <input type="text" name="cultural" placeholder="yes / no">
+                </div>
+
+                <div class="row">
+                    <label for="name" data-motivation="What is your motivation when joining Atlas?"></label>
+                    <input type="text" name="motivation" placeholder="............">
+                </div>
+
+                <div class="row">
+                    <label for="name" data-conflict="How do you deal with conflict?"></label>
+                    <input type="text" name="conflict" placeholder="............">
+                </div>
+
+                <div class="row">
+                    <label for="name" data-skills="What can you offer the club? (your interests / skills / personality)."></label>
+                    <textarea class="third-textarea" name="skills" id=""></textarea>
+                </div>
+
+                <div class="action" dir="ltr">
+                    <button id="toSecond" type="button" data-btn-previous="Previous"></button>
+                    <button type="Submit" data-btn-submit="Submit"></button>
+                </div>
+            </div>
+            <!-- ----------------------------- -->
+
 
         </form>
         
@@ -183,7 +220,6 @@
                     $("#thirdPage").show();
                     $("#secondPage").hide();
                     $("#second-message").css('visibility', 'visible');
-
                 }
                 else {
                     $("#second-message").css('visibility', 'visible');
