@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+:root {
+    --snd-padding: 2rem;
+    --fs-big: 50px;
+    --fs-normal: 25px;
+    --fs-small: 20px;
+    --fs-ex-small: 17px;
+    --border: 2px solid #000000;
+    --color-primary: #000000;
+    --color-secondary: #E8E8E8;
+    --color-third: #969696;
+    --color-selected: #c5c2c2;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Aldrich', sans-serif;
+}
+
+/*------- Global --------*/
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-big);
+
+    color: #000000;
+}
+
+.contact {
+    margin: auto;
+    width: 600px;
+
+    border: var(--border);
+    border-radius: 15px;
+}
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.language .bubble {
+    border: var(--border);
+    box-sizing: border-box;
+    border-radius: 52px;
+    padding: 3px 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.language .bubble:hover {
+    cursor: pointer;
+    background: var(--color-secondary);
+    transition: 0.2s;
+}
+
+.language .bubble .choise {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-normal);
+    color: #000000;
+}
+
+
+/*--------- first page --------*/
+.first-page .container {
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.first-page .container .row{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.first-page label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-normal);
+    color: #000000;
+    
+}
+
+.first-page .bubbles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-page .bubbles .bubble {
+    border: var(--border);
+    border-radius: 52px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 3px 10px;
+}
+
+.first-page .bubbles .bubble:hover {
+    cursor: pointer;
+    background: var(--color-secondary);
+    transition: 0.4s;
+}
+
+.first-page .bubbles .bubble span {
+    font-size: var(--fs-small);
+}
+
+.first-page .bubbles.not-between {
+    justify-content: start;
+    gap: 1rem;
+}
+
+.first-page .bubbles.not-between .bubble{
+    justify-content: start;
+    gap: 1rem;
+    padding: 3px 2rem;
+}
+
+.first-page .bubbles.not-between .bubble:first-child{
+    width: 150px;
+}
+
+.first-page .bubbles.not-between .bubble span{
+    margin: auto;
+}
+
+.first-page .action {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.first-page .action button {
+    width: 50%;
+    color: white;
+    border: none;
+    background: #000000;
+    border-radius: 0px 0px 15px 0px;
+    padding: 15px 2rem;
+    font-size: var(--fs-small);
+}
+
+.first-page .action button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+
+/*- ------- second-page ---------- */
+
+.second-page .row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.second-page .row label {
+    padding: 0 var(--snd-padding);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-normal);
+
+    color: #000000;
+}
+
+.second-page .row input {
+    border: none;
+    background: var(--color-secondary);
+    padding: 15px var(--snd-padding);
+}
+
+.second-page .row input::placeholder {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-ex-small);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.second-page .row-sub label {
+    padding: 0 calc(var(--snd-padding) + 25px);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-ex-small);
+    color: #000000;
+}
+
+.second-page .row-sub input {
+    padding: 15px calc(var(--snd-padding) + 50px);
+}
+
+.second-page select {
+    padding: 15px var(--snd-padding);
+    border: none;
+    background: var(--color-secondary);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-ex-small);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* socials */
+.second-page h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-normal);
+    color: #000000;
+    padding-left: var(--snd-padding);
+    margin: 0;
+}
+
+.second-page h5 span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-ex-small);
+    color: #000000;
+    padding-left: var(--snd-padding);
+}
+
+.second-page .row .container {
+    background: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--snd-padding);
+}
+/* left */
+.second-page .left {
+    width: 50%;
+}
+
+.second-page .left .item {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.second-page .left .item:last-child {
+    margin-bottom: 0.5rem;
+}
+
+.second-page .left .item .image {
+    width: 30px;
+}
+
+.second-page .left .item input {
+    padding: 0;
+    width: 75%;
+    border-bottom: var(--border);
+}
+
+.second-page .left .item input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--color-third);
+    transition: 0.2s;
+}
+
+/* right */
+.second-page .right {
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+}
+
+.second-page .right label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-ex-small);
+    padding: 0;
+    color: #000000;
+}
+
+.second-page .right textarea {
+    border: var(--border);
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: transparent;
+    resize: vertical;
+    padding: 0.5rem 1rem;
+}
+
+.second-page .action {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.second-page .action button {
+    width: 50%;
+    font-family: inherit;
+    color: white;
+    padding: 15px 2rem;
+    font-size: var(--fs-small);
+}
+
+.second-page .action button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.second-page .action button:first-child {
+    width: 40%;
+    background: var(--color-third);
+    border: none;
+    border-radius: 0px 0px 0px 15px;    
+}
+
+.second-page .action button:last-child {
+    width: 60%;
+    background: #000000;
+    border: none;
+    border-radius: 0px 0px 15px 0px;  
+}
+
+
+/*---- active -----*/
+
+.bubble.active {
+    background: var(--color-selected);
+}
+
+.bubble.active:hover {
+    background: var(--color-selected);
+    transition: 0.3s;
+}
+
+.first-page .bubbles .bubble.active:hover {
+    background: var(--color-selected);
+    transition: 0.3s;
+}

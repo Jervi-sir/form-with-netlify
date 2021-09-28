@@ -4,15 +4,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atlas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <form action="POST" data-netlify="true">
-        name, prnom, 
-        <label for="name">name</label>
-        <input type="text" name="name">
-        <div data-netlify-recaptcha="true"></div>
-        <input type="submit" value="submit">
-    </form>
+
+    <h1>
+        Welcome to Atlas
+    </h1>
+    <div class="contact">
+        <!-- language -->
+        <div class="language">
+            <div id="lngEng" class="bubble active">
+                <div class="choice">
+                    English
+                </div>
+                <img class="checkbox" src="images/checkedBox.svg" alt="">
+            </div>
+            <div id="lngFr" class="bubble">
+                <div class="choice">
+                    French
+                </div>
+                <img class="checkbox" src="images/checkbox.svg" alt="">
+            </div>
+            <div id="lngAr" class="bubble">
+                <div class="choice">
+                    العربية
+                </div>
+                <img class="checkbox" src="images/checkbox.svg" alt="">
+            </div>
+        </div>
+
+        <!-- form -->
+        <form action="POST" data-netlify="true">
+            <!-- first Page -->
+            <div id="firstPage" class="first-page">
+                <div class="container">
+                    <div class="row">
+                        <label for="">How are you doin</label>
+                        <div class="bubbles">
+                            <div id="stateExcited" class="bubble">
+                                <img src="images/fire.svg" alt="">
+                                <span>Excited</span>
+                            </div>
+                            <div id="stateNeutral" class="bubble">
+                                <img src="images/neutral.svg" alt="">
+                                <span>Neutral</span>
+                            </div>
+                            <div id="stateBored" class="bubble">
+                                <img src="images/bored.svg" alt="">
+                                <span>Bored</span>
+                            </div>
+                        </div>
+                        <input id="person_state" type="text" name="person_state" hidden>
+                    </div>
+
+                    <div class="row">
+                        <label for="">Are you excited to make change</label>
+                        <div class="bubbles not-between">
+                            <div id="excited-yes" class="bubble">
+                                <span>Yes</span>
+                            </div>
+                            <div id="excited-no" class="bubble">
+                                <span>No</span>
+                            </div>
+                        </div>
+                        <input id="person_excitement" type="text" name="person_excitement" hidden>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <button id="toSecond" type="button">Next</button>
+                </div>
+            </div>
+            <!-- ----------------------------- -->
+
+            <!-- second Page -->
+            <div id="secondPage" class="second-page" hidden>
+                <div class="row">
+                    <label for="name">Name,  family name</label>
+                    <input type="text" name="full_name" placeholder="please enter your name">
+                </div>
+
+                <div class="row">
+                    <label for="name">how can we contact you</label>
+                    <input type="text" name="email_phone" placeholder="email, or phone number">
+                </div>
+
+                <div class="row">
+                    <label for="name">Field you study</label>
+                    <input type="text" name="filed" placeholder="what you study on university">
+                </div>
+
+                <div class="row row-sub">
+                    <label for="name">Level of study</label>
+                    <input type="text" name="filed" placeholder="what you study on university">
+                </div>
+
+                <div class="row">
+                    <label for="formality">Formality</label>
+                    <select name="gender" id="formality">
+                        <option value="" selected hidden>Mister / miss</option>
+                        <option value="male">Mister</option>
+                        <option value="female">Miss</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <h5>Feel free to share with us <br><span>Your social media, so we can know more about you</span></h5>
+                    <div class="container">
+                        <div class="left">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="images/facebook.svg" alt="">
+                                </div>
+                                <input type="text" name="facebook" placeholder="link">
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="images/instagram.svg" alt="">
+                                </div>
+                                <input type="text" name="instagram" placeholder="@username">
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="images/linkedin.svg" alt="">
+                                </div>
+                                <input type="text" name="linkedin" placeholder="@username">
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <label for="other">Other: </label>
+                            <textarea name="other_socials" rows="3" id=""></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <button id="toFirst" type="button">Previous</button>
+                    <button id="toThird" type="button">Next</button>
+                </div>
+            </div>
+            <!-- ----------------------------- -->
+
+        </form>
+        
+        <script src="language.js"> </script>
+        <script src="firstPage.js"> </script>
+        <script src="buttons.js"> </script>
+        <script>
+            $("#toSecond").click(function() {
+                $("#firstPage").hide();
+                $("#secondPage").show();
+            });
+
+            $("#toFirst").click(function() {
+                $("#firstPage").show();
+                $("#secondPage").hide();
+            });
+
+
+        </script>
 </body>
-</html>\
+</html>
