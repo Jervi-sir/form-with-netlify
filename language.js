@@ -68,9 +68,9 @@ function english() {
     $('[data-skills]').attr('data-skills', 'What can you offer the club? (your interests / skills / personality).');
     $('[data-btn-submit]').attr('data-btn-submit', 'submit');
     $('[data-error-message]').attr('data-error-message', 'Please answer to the questions');
-
-
     
+    $('[data-secure-message]').attr('data-secure-message', 'All the details are securely saved');
+
     $('#default-option').text('Misters / Miss');
     $('option[value=male]').text('Mister');
     $('option[value=female]').text('Miss');
@@ -124,6 +124,7 @@ function french() {
     $('option[value=male]').text('Monsieur');
     $('option[value=female]').text('Madame (Mademoiselle)');
 
+    $('[data-secure-message]').attr('data-secure-message', 'Tous les détails sont sauvegardés en toute sécurité');
     
     $('input[name="full_name"]').attr("placeholder", "Veuillez entrer votre nom");
     $('input[name="email_phone"]').attr("placeholder", "e-mail ou numéro de téléphone");
@@ -166,6 +167,8 @@ function arabic() {
     $('[data-btn-submit]').attr('data-btn-submit', 'إرسال');
 
     $('[data-error-message]').attr('data-error-message', 'الرجاء الرد على الأسئلة');
+    
+    $('[data-secure-message]').attr('data-secure-message', 'يتم حفظ جميع التفاصيل بشكل آمن');
 
 
     $('#default-option').text('انسة / سيد');

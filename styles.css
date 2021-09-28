@@ -365,6 +365,31 @@ h1 {
     transition: 0.3s;
 }
 
+/*----- footer ------*/
+.message {
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-exsmall);
+    text-align: center;
+    line-height: 10px;
+    margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--fs-exsmall);
+    line-height: 10px;
+    text-align: center;
+    margin-top: 5rem;
+    color: #000000;
+}
+
+footer a {
+    color: var(--color-primary);
+}
 
 
 
@@ -515,6 +540,10 @@ h1 {
     content: attr(data-btn-submit);
 }
 
+[data-secure-message]:before {
+    content: attr(data-secure-message);
+}
+
 
 #first-message,
 #second-message {
@@ -523,3 +552,5 @@ h1 {
     text-align: center;
     margin-bottom: 0.5rem;
 }
+
+

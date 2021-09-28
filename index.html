@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -183,15 +184,20 @@
                 </div>
 
                 <div class="action" dir="ltr">
-                    <button id="toSecond" type="button" data-btn-previous="Previous"></button>
+                    <button id="toSecond-previous" type="button" data-btn-previous="Previous"></button>
                     <button type="Submit" data-btn-submit="Submit"></button>
                 </div>
             </div>
             <!-- ----------------------------- -->
-
-
         </form>
-        
+    </div>
+            
+    <div class="message" data-secure-message="All the details are securely saved">
+    </div>
+
+    <footer>
+        quickly made by <a href="https://www.facebook.com/gacem.humen" target="_blank">Jervi</a> , of <a href="https://www.instagram.com/2kingswebsites/?hl=en" target="_blank">2kingsWebsites</a>
+    </footer>   
         <script src="language.js"> </script>
         <script src="firstPage.js"> </script>
         <script src="buttons.js"> </script>
@@ -203,11 +209,18 @@
                 if(state_filled && are_you) {
                     $("#firstPage").hide();
                     $("#secondPage").show();
+                    $("#thirdPage").hide();
                     $("#first-message").css('visibility', 'hidden');
                 }
                 else {
                     $("#first-message").css('visibility', 'visible');
                 }
+            });
+
+            
+            $("#toSecond-previous").click(function() {
+                $("#secondPage").show();
+                $("#thirdPage").hide();
             });
 
             $("#toFirst").click(function() {
@@ -242,6 +255,10 @@
                 return valid;
             }
 
+            $('textarea').on('input', function () {
+                this.style.height = 'auto';
+                this.style.height = (this.scrollHeight) + 'px';
+            });
         </script>
 </body>
 </html>
