@@ -150,7 +150,7 @@ function arabic() {
     $('[data-contact]').attr('data-contact', 'كيف يمكننا الاتصال بك');
     $('[data-field]').attr('data-field', 'المجال الذي تدرسه');
     $('[data-level]').attr('data-level', 'المستوى الدراسي');
-    $('[data-formality]').attr('data-formality', 'شكلي');
+    $('[data-formality]').attr('data-formality', 'نوع اجتماعي');
     $('[data-other]').attr('data-other', 'آخر:');
     $('[data-btn-previous]').attr('data-btn-previous', 'الرجوع');
     $('[data-female]').attr('data-female', 'انسة');
